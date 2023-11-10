@@ -1,0 +1,706 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    flex-shrink: initial;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 23px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    flex-shrink: initial;
+    flex-direction: row;
+    text-align: center;
+
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+   }
+   
+   #grid-container {
+       display: grid;
+       grid-template-areas: "header" "main" "footer" ;
+   }
+   
+   header, main, footer{
+     
+   }
+   
+   header {
+       font-size: 1.5rem;
+       font-weight: 600;
+       grid-area: header;
+      
+   }
+
+   header h2{
+
+   
+}
+
+
+   
+   header nav {
+       display: flex;
+       justify-content: space-between;
+       justify-content: center;
+
+    
+   }
+   
+   .header{
+    margin-top: 120px;
+    margin-bottom: 200px;
+   }
+   
+ 
+
+   
+   .mad {
+    list-style: none;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    flex-direction: row;
+   
+ 
+}
+
+.mad li {
+    display: flex;
+
+    margin: 0;
+ font-family: 'Times New Roman', Times, serif;
+margin-left:auto;
+margin-right: auto;
+;
+
+}
+.mad li a {
+    text-decoration: none; 
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .mad li {
+        font-size: medium;
+        flex-wrap: wrap;
+
+        text-decoration: none;
+        
+
+    }
+}
+
+.mad a {
+    display: block;
+}
+
+/*.lei-seg {list-style: none;}*/
+
+.navbar-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+   margin-right: 10px
+   
+   
+}
+
+
+
+
+
+
+
+   .navbar-left {
+    display: flex;
+    justify-content: flex-start;
+ 
+}
+
+/*chat gpt foreslo*/
+.show-in-mobile {
+    position: relative;
+
+    list-style-type: none;
+    display: flex; 
+    justify-content: left;
+    flex-wrap: wrap;    
+
+    top: 50px;
+ left: 1%;
+}
+
+
+@media (min-width: 768px) {
+    .show-in-mobile {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .show-in-mobile {
+        display: flex; 
+        flex-wrap: wrap;
+    
+    }
+}
+
+
+
+
+
+
+/* 
+   #logo{
+       text-decoration: none;
+       font-family: 'Times New Roman', Times, serif;
+       display: inline;
+
+   } */
+
+ 
+/*logo er tatt fra forelesningen til Ann Charlotte, Foreleser i Høgskolen i Østfold*/
+
+ #logo {
+  
+    background-color: black;
+    width: 109px;
+    height: 20px; 
+    display: flex;
+    flex-shrink: initial;
+    justify-content: center;
+    align-items: center;
+    position: relative
+    border: none;
+    
+  
+    
+ }
+
+ @media (max-width: 768px){
+    #logo {
+margin-left: 70px;
+
+    }
+ }
+
+ @media (max-width: 275px) { 
+    .show-in-mobile{
+    position: relative;
+    right: 100px;
+    .navbar{
+        display: flex;
+       flex-wrap: wrap;
+     }
+        
+ }
+    
+ }
+
+
+
+ 
+
+.søkeknapp {list-style-type: none;
+    display: inline;
+margin-right: 10px;
+
+}
+.handlekurv {list-style-type: none;
+    display: inline;
+margin-left: 5px;
+margin-bottom: 100px }
+
+.navbar-left {
+    position: relative;
+    top: 0;
+    left: 0;
+  
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar-left li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    color: white; 
+    
+  }
+
+
+  
+ 
+
+
+   
+
+   .navbar {
+      display: inline;
+   }
+   
+   .responsive {
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       background-color: rgb(36, 33, 33);
+       margin: 0;
+       padding: 0;
+       top: 40px;
+       width: 100%;
+       list-style: none;
+   
+   }
+   
+   .responsive a{
+       color: white;
+       display: inline-block;
+       padding: 0rem;
+       text-decoration: none;
+   }
+   
+
+  
+
+   .sko {
+    position: relative;
+}
+
+/*ville ha dette over bilde med hjelp av z-index*/
+   .black-btn{
+    z-index: 1;
+    position: relative;
+text-decoration: none;
+    border: none;
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 125px; 
+    
+    background-color: black;
+    color: white ;
+    border-radius: 5px;
+    font-weight: 25;
+    font-size: small;
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    line-height: 2;
+    font-family: 'Times New Roman', Times, serif
+   
+   
+    
+   }
+/* styling til black button*/
+   .black-btn-2{
+    z-index: 0;
+    position: relative;
+text-decoration: none;
+    border: none;
+    border-radius: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 125px; 
+   
+    bottom: 55px;
+   display:;
+    color: white ;
+    border-radius: 5px;
+    font-weight: 25;
+    font-size: small;
+    width: 60px;
+    height: 70px;
+    margin: 0 auto;
+ 
+    font-family: 'Times New Roman', Times, serif
+   /*chatgpt foreslo z-index : 0 og z-index: 1 for at det bildet skal være bak button*/
+   
+    
+   }
+
+   .black-btn:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+    
+
+.flex-section{
+
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line in mobile mode */
+    justify-content: center; /* Center the images horizontally */
+    
+}
+.flex-section img {
+    width: 100%; /* Make sure the images take the full width of the container */
+    max-width: 100%; /* Ensure the images don't exceed the container's width */
+    padding: 25px; /* Add space around each image */
+    box-sizing: border-box; /* Include padding in the image's width */
+}
+
+.flex-section-2{
+
+    margin-bottom: 30px;
+    width: 50%;
+    filter: brightness(0);
+}
+
+.flex-section-3 {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line in mobile mode */
+    justify-content: center; /* Center the images horizontally */
+ 
+    
+}
+
+.flex-section-3 img {
+    width: 100%; /* Make sure the images take the full width of the container */
+    max-width: 100%; /* Ensure the images don't exceed the container's width */
+    padding: 25px; /* Add space around each image */
+    box-sizing: border-box; /* Include padding in the image's width */
+ filter: brightness(0);
+ margin-bottom: 30px;
+}
+
+  /* Dette har jeg tatt fra Ann Charlotte da ho viste oss dette i forelesning*/
+   
+   main {
+       grid-area: main;
+   }
+   
+   main section img {
+       width: 100%;
+   }
+   
+   footer {
+       grid-area: footer;
+       margin-top: 30px;
+   }
+   .services-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;;
+   }
+
+   #services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-around;;
+   }
+
+   #services article{ 
+max-width: 100%;
+width: 100%;
+min-width: 100%; 
+
+   }
+
+   @media only screen and (max-width:768 px){
+   .hide-in-mobile{
+    display: none;
+   }}
+
+
+@media (max-width: 768px) {
+    .mad li a{
+        display: none;
+    }
+}
+    
+
+
+.mailing-list-navn{position: relative;
+
+justify-content: center;
+
+}
+
+
+
+    
+footer {
+background-color: black;
+}
+   /* Grid container for evt columns */
+   @media only screen and (min-width:768px){
+    #grid-container{
+        grid-template-areas: "header header header" "main" "footer footer footer"; 
+    }
+       .navbar{
+           display: flex;
+           flex-direction: row;
+   
+           list-style: none;
+           margin: 0;
+       }
+      
+   
+       .fa-magnifying-glass{
+           display: flex;
+       }
+   
+       .flex-section {
+           display: flex;
+           justify-content: space-evenly;
+           margin-bottom: 50px;
+       }
+   
+       .flex-section img{
+           width: 40%;
+       }
+   
+      
+       .flex-section-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .flex-section-2 img{
+        width: 10%;
+    }
+    .flex-section-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%; 
+        margin: 0 auto; 
+        margin-bottom: 20px;
+     
+    }
+    
+    .flex-section-3 img {
+        max-width: 100%; 
+        width: 45%; 
+        margin: 0 2.5%; 
+    }
+    
+    .flex-section section{
+        width: 50%;
+        align-self: center;
+    }
+    .fle
+       .right img {
+           order: 1;
+       }
+
+
+       /* produktstiling */
+
+       .section-main {
+        display: flex;
+        background-color: black;
+        height: 30%;
+        padding-top: 30px;
+    }
+
+   
+
+    .left-side {
+        width: 60%;
+    }
+
+    .left-side img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .button {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0)000;
+        padding: 22px 50px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 110px;
+        margin-right: 10px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        color: grey;
+    }
+
+    .icons li {
+        margin-right:30px;
+        margin-top: 20px;
+    }
+
+    }
+
+   
+
+/* mobil */
+
+    
+@media only screen and (max-width: 767px){
+    
+    .button{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+left: 8%;
+    justify-content: center;
+    margin-left: 10%;
+    background-color: #383838;
+    color: rgb(255, 255, 255)000;
+    padding: 22px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 110px;
+    margin-right: 10px;
+
+    flex-shrink: initial;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 10px;
+
+
+}
+
+/*chat gpt foreslo dette for media querty */
+
+
+.mailing-list-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HeadingColor{
+color: #ffffff;
+}
+.om {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+  flex-wrap: wrap;
+    
+}
+
+.om li{
+    list-style-type: none;
+}
+.om-oss-left, .om-oss-right {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+  
+
+
+}
+}
+    .icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .icons li {
+        margin-right:30px;
+        margin-top: 20px;
+    }
+
+ 
+
+    .left-side img {
+        width: 90%;
+        margin-left: 22px;
+        height: auto;
+    }
+/* mailing list */
+    .mailing-list-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+.HeadingColor{
+color: #ffffff;
+}
+    .om {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+      
+        
+    }
+    
+    .om li{
+        list-style-type: none;
+    }
+    .om-oss-left, .om-oss-right {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+      
+    }
+    
+
+    /* leveranse og retur */
+
+    .velkommen , .leveranse-informasjon , .fraktmetoder, .leveringstider, .returprosedyrer , .kontakt-oss, .elsker-dere {
+        flex-wrap: wrap;
+    }
