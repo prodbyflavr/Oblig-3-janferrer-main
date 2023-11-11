@@ -149,15 +149,21 @@ margin-right: auto;
 
 /*chat gpt foreslo*/
 .show-in-mobile {
-    position: relative;
+    position: absolute;
+
 
     list-style-type: none;
     display: flex; 
     justify-content: left;
     flex-wrap: wrap;    
 
-    top: 50px;
- left: 1%;
+    
+ left: 3%;
+}
+
+nav {
+justify-content: left;
+
 }
 
 
